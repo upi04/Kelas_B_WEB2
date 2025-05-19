@@ -8,6 +8,6 @@ class BiodataController extends Controller
 {
     public function tampilkan()
     {
-        return "[Warda Khairah], dengan [NIM 60200123063]";
+        return "Nama Lengkap: Warda Khairah, dengan NIM: 60200123063";
     }
 }
