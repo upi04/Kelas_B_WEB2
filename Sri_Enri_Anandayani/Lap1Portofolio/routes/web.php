@@ -8,3 +8,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/biodata',[BiodataController::class, 'index']);
+Route::get('/cantikk', function () {return view('about');});
