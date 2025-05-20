@@ -11,6 +11,6 @@ class BiodataController extends Controller
     $namaLengkap = "Sri Enri Anandayani";
         $nim = "60200123065";
 
-        return $namaLengkap . ", dengan " . $nim;
+        return $namaLengkap . ", dengan nim " . $nim;
     }
 }
