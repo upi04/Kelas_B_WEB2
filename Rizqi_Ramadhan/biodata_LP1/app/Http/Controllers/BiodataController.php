@@ -8,6 +8,6 @@ class BiodataController extends Controller
 {
     public function index()
     {
-        return "Rizqi Ramadhan, NIM: 60200123071";
+        return view('home'); 
     }
 }

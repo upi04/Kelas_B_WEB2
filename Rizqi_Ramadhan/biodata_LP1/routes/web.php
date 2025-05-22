@@ -2,10 +2,23 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 use App\Http\Controllers\BiodataController;
 
-Route::get('/biodata', [BiodataController::class, 'index']);
+Route::get('/', [BiodataController::class, 'index']);
 
+Route::get('/about_rizqi', function(){
+    return view('about_rizqi');
+});
+
+Route::get('/contact', function(){
+    return view('contact');
+});
+
+Route::get('/projects', function(){
+    return view('projects');
+});
+
+Route::get('/skill', function(){
+    return view('skill');
+});
