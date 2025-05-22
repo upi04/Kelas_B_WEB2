@@ -1,8 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\BiodataController; 
+use App\Http\Controllers\BiodataController;
 
 
 
-Route::get('/biodata', [BiodataController::class, 'show']);
+Route::get('/about_rizqkhalad', function(){
+    return view('about_rizqkhalad');
+});
+Route::get('/about', function(){
+    return view('welcome');
+});

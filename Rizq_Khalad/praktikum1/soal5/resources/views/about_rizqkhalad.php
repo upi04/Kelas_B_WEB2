@@ -5,14 +5,11 @@
     <title>Halaman Utama</title>
 </head>
 <body>
-    <h1>Selamat Datang di Website Kami</h1>
-
-    <p>Menu Navigasi:</p>
+    <h1>ABOUT rizqkhalad</h1>
     <ul>
         <li>rizq khalad</li>
         <li>NIM : 60200123093</li>
-        <li><a href="about_rizqkhalad">About Rizqkhalad</li>
+        <li><a href="biodata">Ke Halaman Utama</a>
     </ul>
-
 </body>
 </html>

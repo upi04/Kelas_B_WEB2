@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class BiodataController extends Controller
 {
-    public function show()
+    public function index()
     {
-        return "Nama Lengkap: Rizq Khalad, dengan Nomor Induk Mahasiswa: 60200123093";
+        return view('welcome'); 
     }
 }
