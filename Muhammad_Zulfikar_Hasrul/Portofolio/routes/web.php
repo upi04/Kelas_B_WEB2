@@ -6,12 +6,15 @@ use App\Http\Controllers\BiodataController;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/biodata', action: [BiodataController::class, 'show']);
+
 Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/aboutnita', function () {
-    return view('aboutnita');
+Route::get('/about', function () {
+    return view('about');
 });
 
 Route::get('/projects', function () {
