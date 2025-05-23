@@ -1,0 +1,39 @@
+/* style_about.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #fff;
+    border-bottom: 2px solid #eee;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 40px;
+}
+
+
+main p {
+    max-width: 700px;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 15px;
+}
