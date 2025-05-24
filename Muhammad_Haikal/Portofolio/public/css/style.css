@@ -1,0 +1,448 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #2258e0;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #e7e9ed;
+    text-align: center;
+    margin-top: 40px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2d6cdf;
+    background: #fff;
+    border: 1px solid #2d6cdf;
+    padding: 10px 18px;
+    margin: 0 8px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background: #2d6cdf;
+    color: #fff;
+}
+
+ul {
+    max-width: 400px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 24px 32px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(44, 108, 223, 0.07);
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 12px;
+    font-size: 1.05em;
+}
+
+a {
+    color: #2d6cdf;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Animasi fade-in untuk body */
+body {
+    animation: fadeIn 1.2s;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Efek hover animasi pada nav a */
+nav a {
+    position: relative;
+    overflow: hidden;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: #2d6cdf;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Partikel canvas di background */
+#particles-js {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+/* Tambahkan di file: public/css/style.css */
+.contact-box {
+    max-width: 400px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 24px 32px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(44, 108, 223, 0.07);
+    font-size: 1.08em;
+}
+
+.contact-box a {
+    color: inherit;         /* Mengikuti warna teks induk */
+    text-decoration: none;  /* Menghilangkan garis bawah */
+    font-weight: bold;      /* Opsional: agar nama Instagram lebih tegas */
+}
+
+.contact-box a:hover {
+    text-decoration: underline; /* atau none jika tetap ingin tanpa garis bawah saat hover */
+    color: #2d6cdf;             /* atau warna lain sesuai keinginan */
+}
+/* css about */
+/* Efek fade-in pada body */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #2258e0;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1.2s;
+    min-height: 100vh;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Partikel background */
+#particles-js {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+/* Judul */
+h1 {
+    color: #e7e9ed;
+    text-align: center;
+    margin-top: 40px;
+    letter-spacing: 1px;
+}
+
+/* Deskripsi */
+.about-desc {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 24px;
+    color: #f5f5f5;
+}
+
+/* Foto profil */
+.profile-img {
+    display: block;
+    margin: 24px auto 16px auto;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 12px rgba(44,108,223,0.15);
+    border: 4px solid #fff;
+}
+
+/* List data diri */
+.about-list {
+    max-width: 400px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 24px 32px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(44, 108, 223, 0.07);
+    list-style: none;
+    font-size: 1.08em;
+}
+.about-list li {
+    margin-bottom: 12px;
+}
+
+/* Navigasi */
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+nav a {
+    text-decoration: none;
+    color: #2d6cdf;
+    background: #fff;
+    border: 1px solid #2d6cdf;
+    padding: 10px 18px;
+    margin: 0 8px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+}
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: #2d6cdf;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+nav a:hover {
+    background: #2d6cdf;
+    color: #fff;
+}
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Link kembali */
+.back-link {
+    display: block;
+    text-align: center;
+    margin: 24px auto 0 auto;
+    color: #fff;
+    background: #2d6cdf;
+    padding: 10px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    width: fit-content;
+    transition: background 0.2s;
+}
+.back-link:hover {
+    background: #1846b1;
+}
+.about-desc {
+    text-align: center;
+    font-size: 1.13em;
+    color: #f5f5f5;
+    margin-bottom: 24px;
+    margin-top: 0;
+    line-height: 1.6;
+    font-style: italic;
+}
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin: 18px 0 18px 0;
+}
+
+.contact-icons a img {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(44,108,223,0.10);
+    padding: 6px;
+}
+
+.contact-icons a img:hover {
+    transform: scale(1.13) rotate(-6deg);
+    box-shadow: 0 4px 16px rgba(44,108,223,0.18);
+    background: #e7e9ed;
+}
+/* Efek fade-in pada body */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #2258e0;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1.2s;
+    min-height: 100vh;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Partikel background */
+#particles-js {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+/* Judul */
+h1 {
+    color: #e7e9ed;
+    text-align: center;
+    margin-top: 40px;
+    letter-spacing: 1px;
+}
+
+/* Deskripsi */
+.about-desc {
+    text-align: center;
+    font-size: 1.13em;
+    color: #f5f5f5;
+    margin-bottom: 24px;
+    margin-top: 0;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* Foto profil */
+.profile-img {
+    display: block;
+    margin: 24px auto 16px auto;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 12px rgba(44,108,223,0.15);
+    border: 4px solid #fff;
+}
+
+/* List data diri */
+ul {
+    max-width: 400px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 24px 32px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(44, 108, 223, 0.07);
+    list-style: none;
+    font-size: 1.08em;
+}
+ul li {
+    margin-bottom: 12px;
+}
+
+/* Navigasi */
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+nav a {
+    text-decoration: none;
+    color: #2d6cdf;
+    background: #fff;
+    border: 1px solid #2d6cdf;
+    padding: 10px 18px;
+    margin: 0 8px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+}
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: #2d6cdf;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+nav a:hover {
+    background: #2d6cdf;
+    color: #fff;
+}
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Link kembali */
+a.back-link {
+    display: block;
+    text-align: center;
+    margin: 24px auto 0 auto;
+    color: #fff;
+    background: #2d6cdf;
+    padding: 10px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    width: fit-content;
+    transition: background 0.2s;
+}
+a.back-link:hover {
+    background: #1846b1;
+}
+/* Efek animasi masuk (fade-in + slide-up) */
+.animated-text {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlideIn 1s forwards;
+}
+.animated-text:nth-child(1) { animation-delay: 0.1s; }
+.animated-text:nth-child(2) { animation-delay: 0.3s; }
+.animated-text:nth-child(3) { animation-delay: 0.5s; }
+
+@keyframes fadeSlideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efek hover hanya pada elemen yang di-hover */
+.animated-text:hover,
+.about-desc:hover {
+    color: #2d6cdf;
+    text-shadow: 0 4px 24px rgba(44,108,223,0.25), 0 1px 0 #fff;
+    cursor: pointer;
+    transition: 
+        color 0.3s, 
+        text-shadow 0.3s, 
+        transform 0.3s;
+    transform: scale(1.06) translateY(-4px);
+    /* Efek timbul dan sedikit naik */
+}
+
+/* Efek hover pada setiap item list */
+ul.animated-text li {
+    transition: 
+        color 0.3s, 
+        text-shadow 0.3s, 
+        transform 0.3s;
+}
+ul.animated-text li:hover {
+    color: #2d6cdf;
+    text-shadow: 0 4px 24px rgba(44,108,223,0.25), 0 1px 0 #fff;
+    cursor: pointer;
+    transform: scale(1.06) translateY(-4px);
+}
