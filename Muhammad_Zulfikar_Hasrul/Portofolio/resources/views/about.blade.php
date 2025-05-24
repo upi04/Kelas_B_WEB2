@@ -11,6 +11,6 @@
     <ol>
         <ul>Tempat, Tanggal Lahir: Sungguminasa, 2 Januari 2005</ul>
         <ul>Hobi: Main Game, Explore Terminal Linux dan Badmintoon</ul>
-        <ul>Asal Sekolah: Madrasah Madani Alauddin</ul>
+        <ul>Asal Sekolah: Madrasah Madani Alauddin Pao Pao</ul>
     </ol>
 @endsection
