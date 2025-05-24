@@ -12,6 +12,5 @@
         <ul>Tempat, Tanggal Lahir: Sungguminasa, 2 Januari 2005</ul>
         <ul>Hobi: Main Game, Explore Terminal Linux dan Badmintoon</ul>
         <ul>Asal Sekolah: Madrasah Madani Alauddin</ul>
-        <ul>Cita-cita: Menjadi Web Developer</ul>
     </ol>
 @endsection
