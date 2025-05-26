@@ -8,6 +8,8 @@ Route::get('/', function () {
 });
 
 Route::get('/biodata', [BiodataController::class, 'index']);
+<<<<<<< HEAD
+=======
 
 Route::get('/home', function () {
     return view('home');
@@ -28,3 +30,4 @@ Route::get('/skills', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+>>>>>>> dbfa4438fc3785e0289c9bd1fbe422bc1fec32e4

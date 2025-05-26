@@ -1,13 +1,24 @@
+<<<<<<< HEAD
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+>>>>>>> dbfa4438fc3785e0289c9bd1fbe422bc1fec32e4
     <title>@yield('title')</title>
     <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+<<<<<<< HEAD
+    
+=======
+>>>>>>> dbfa4438fc3785e0289c9bd1fbe422bc1fec32e4
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-black">
@@ -43,4 +54,8 @@
     <!-- Bootstrap JS (opsional, untuk navbar collapse) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+<<<<<<< HEAD
+</html>
+=======
+>>>>>>> dbfa4438fc3785e0289c9bd1fbe422bc1fec32e4
 </html>
