@@ -34,7 +34,7 @@
         <tr>
             <td>Pendidikan Terakhir</td>
             <td>:</td>
-            <td>SMAS IMMIM PUTRA MKS </td>
+            <td>SMAS IMMIM PUTRA MAKASSAR </td>
         </tr>
     </table>
 
