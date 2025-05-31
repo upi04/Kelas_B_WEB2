@@ -23,7 +23,15 @@
     <tr>
         <td>Tempat/Tanggal Lahir</td>
         <td>:</td>
+<<<<<<< HEAD
         <td>Makassar/30 Oktober 2005</td>
+=======
+<<<<<<< HEAD
+        <td>Makassar/30 Oktober 2005</td>
+=======
+        <td>Makassae/30 Oktober 2005</td>
+>>>>>>> dbfa4438fc3785e0289c9bd1fbe422bc1fec32e4
+>>>>>>> 3b4b535672b440e20722381692d9b02938771a80
     </tr>
     <tr>
         <td>Hobi</td>
