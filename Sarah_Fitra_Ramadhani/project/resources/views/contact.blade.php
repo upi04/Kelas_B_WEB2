@@ -8,27 +8,27 @@
     <tr>
         <td>Nomor</td>
         <td>:</td>
-        <td>089765465322</td>
+        <td>082343515698</td>
     </tr>
     <tr>
         <td>Instagram</td>
         <td>:</td>
-        <td>@icawpy</td>
+        <td>@sarahfitr_r</td>
     </tr>
     <tr>
         <td>Twitter</td>
         <td>:</td>
-        <td>@ica</td>
+        <td>@sarah</td>
     </tr>
     <tr>
         <td>Tiktok</td>
         <td>:</td>
-        <td>@ica</td>
+        <td>@sarah</td>
     </tr>
     <tr>
         <td>Facebook</td>
         <td>:</td>
-        <td>ica</td>
+        <td>sarah</td>
     </tr>
 </table>
 @endsection

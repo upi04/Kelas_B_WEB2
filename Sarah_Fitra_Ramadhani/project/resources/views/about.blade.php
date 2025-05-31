@@ -23,7 +23,7 @@
     <tr>
         <td>Tempat/Tanggal Lahir</td>
         <td>:</td>
-        <td>Makassae/30 Oktober 2005</td>
+        <td>Makassar/30 Oktober 2005</td>
     </tr>
     <tr>
         <td>Hobi</td>
