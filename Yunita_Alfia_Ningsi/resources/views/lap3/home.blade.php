@@ -5,7 +5,7 @@
         <style>
         table { width: 60%; margin: 20px auto; border-collapse: collapse; }
         th, td { padding: 10px; border: 1px solid #ccc; text-align: left; }
-        th { background-color: #f2f2f2; width: 200px; }
+        th { background-color:rgb(197, 236, 183); width: 200px; }
     </style>
 </head>
 <body>
