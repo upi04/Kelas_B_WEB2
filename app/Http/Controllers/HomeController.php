@@ -19,7 +19,6 @@ class HomeController extends Controller
             'Pendidikan' => 'S1 Teknik Informatika',
             'Hobi' => 'Makan Dengar Musik',
             'Cita Cita' => 'Menjadi Ibu Kos',
-            'warna Favorit' => 'Merah Menyalahh',
             'Keahlian' => 'Tidur',
             'Pengalaman Organisasi' => 'DrumBand ajah'
         ];
