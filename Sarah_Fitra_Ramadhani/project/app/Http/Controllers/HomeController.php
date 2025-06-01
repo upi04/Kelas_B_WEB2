@@ -19,7 +19,7 @@ class HomeController extends Controller
         $fitur = [
             'Nama' => 'Sarah Fitra Ramadhani',
             'Nama Panggilan' => 'Sarah',
-            'Tempat, Tanggal Lahir' => 'Makassar, 30 Oktober 2005',
+            'Tempat, Tanggal Lahir' => 'Makassar,30 Oktober 2005',
             'Jenis Kelamin' => 'Perempuan',
             'Alamat' => 'Pallangga,Gowa',
             'Email' => 'sarahfitraramadhani3010@gmail.com',
