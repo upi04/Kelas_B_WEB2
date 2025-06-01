@@ -20,7 +20,7 @@ class HomeController extends Controller
             'Hobi' => 'Makan Dengar Musik',
             'Cita Cita' => 'Menjadi Ibu Kos',
             'warna Favorit' => 'Merah Menyalahh',
-            'Keahlian' => 'Makan',
+            'Keahlian' => 'Tidur',
             'Pengalaman Organisasi' => 'DrumBand ajah'
         ];
 
