@@ -7,10 +7,10 @@
 </head>
 <body>
     <h1>Biodata Diri:</h1>
-    <p>Nama: Siti Fatimah Aszhara <br>
+    <p>Nama: Nur Faiqatunnisa <br>
         Alamat: Makassar, Sulawesi Selatan <br>
-        Tempat, Tanggal Lahir: Tomoni, 31 Maret 2004 <br>
-        NIM: 60200123047 <br>
+        Tempat, Tanggal Lahir: Sinjai, 20 juli 2005 <br>
+        NIM: 60200123053 <br>
         Jurusan: Teknik Informatika <br>
         Fakultas: Sains dan Teknologi <br>
         Kelas: B <br>

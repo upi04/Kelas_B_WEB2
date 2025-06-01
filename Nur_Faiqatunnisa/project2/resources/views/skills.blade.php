@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Ini Halaman Skill</h1>
-    <p> <b>Inyaallah</b> data analyst</p>
+    <p> <b>Bismillah</b> data analyst dan frontend developer</p>
         <ol  style="list-style: none; display: flex; gap: 15px;">
         <li>
             <a href="/home">Home</a>

@@ -1,8 +1,8 @@
+@extends('home')
 
+@section('title', 'About')
 
-<?php $__env->startSection('title', 'About'); ?>
-
-<?php $__env->startSection('content'); ?>
+@section('content')
 <h3>Daftar Diri</h3>
 <table>
     <tr>
@@ -23,7 +23,7 @@
     <tr>
         <td>Tempat/Tanggal Lahir</td>
         <td>:</td>
-        <td>Makassae/30 Oktober 2005</td>
+        <td>Makassar/30 Oktober 2005</td>
     </tr>
     <tr>
         <td>Hobi</td>
@@ -36,5 +36,4 @@
         <td>Jadi Manusia yang Berguna</td>
     </tr>
 </table>
-<?php $__env->stopSection(); ?>
-<?php echo $__env->make('home', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH D:\semester 4\web 2\Kelas_B_WEB2\Sarah_Fitra_Ramadhani\project\resources\views/about.blade.php ENDPATH**/ ?>
+@endsection

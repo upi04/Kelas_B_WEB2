@@ -1,18 +1,29 @@
 @extends('home')
 
-@section('title', 'project')
+@section('title', 'Projects')
 
 @section('content')
 
-<br>
-    <h3>Project</h3>
-    <table>
-        <tr>
-            <td>1. Sistem Reservasi Fast Food</td>
-        </tr>
-        <tr>
-            <td>2. Aplikasi Game FactQuest (Quiz Pengetahuan)</td>
-        </tr>
+<div class="container mt-4">
+    <h3 class="mb-3">Projects</h3>
+    <table class="table table-bordered table-striped">
+        <thead class="table-light">
+            <tr>
+                <th scope="col">Nama Project</th>
+                <th scope="col">Judul Project</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Project 1</th>
+                <td>{{ $projects['nama1'] }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Project 2</th>
+                <td>{{ $projects['nama2'] }}</td>
+            </tr>
+        </tbody>
     </table>
-    
+</div>
+
 @endsection
