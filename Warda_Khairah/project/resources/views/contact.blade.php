@@ -1,27 +1,27 @@
 @extends('home')
 
-@section('title', 'contact')
+@section('title', 'Contact')
 
 @section('content')
 
-<br>
-    <h3>Kontak</h3>
-    <table>
-        <tr>
-            <td>Instagram</td>
-            <td>:</td>
-            <td>@wrdaa.khairah</td>
-        </tr>
-        <tr>
-            <td>WhatsApp</td>
-            <td>:</td>
-            <td>082156798989</td>
-        </tr>
-        <tr>
-            <td>Email</td>
-            <td>:</td>
-            <td>khairahwarda@gmail.com</td>
-        </tr>
+<div class="container mt-4">
+    <h3 class="mb-3">Kontak</h3>
+    <table class="table table-bordered table-striped">
+        <tbody>
+            <tr>
+                <th scope="row">Instagram</th>
+                <td>{{ $biodata['instagram'] }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Telepon</th>
+                <td>{{ $biodata['telepon'] }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Email</th>
+                <td>{{ $biodata['email'] }}</td>
+            </tr>
+        </tbody>
     </table>
-    
+</div>
+
 @endsection
