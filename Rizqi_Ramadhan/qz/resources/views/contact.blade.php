@@ -6,7 +6,7 @@
 </head>
 <body>
     @section('header-image')
-        <img src="{{ asset('contact_foto.png') }}" alt="Project Logo" style="height: 60px;">
+        <img src="{{ asset('image/contact_foto.png') }}" alt="Project Logo" style="height: 60px;">
     @endsection
     @include('header')
 </body>

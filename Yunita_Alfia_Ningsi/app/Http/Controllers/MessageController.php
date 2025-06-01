@@ -16,7 +16,7 @@ class MessageController extends Controller
     private function getBiodata()
     {
         return [
-            'Message' => '"Setiap tantangan adalah peluang untuk tumbuh. Tetap fokus, tetap semangat, dan percaya bahwa kerja kerasmu akan membuahkan hasil terbaik. Kamu tidak sendiri—kita bergerak maju bersama!"',
+            'Message' => '"Setiap tantangan adalah peluang untuk tumbuh. Tetap fokus, tetap semangat, dan percaya bahwa kerja kerasmu akan membuahkan hasil terbaik!"',
         ];
     }
        private function getLink()

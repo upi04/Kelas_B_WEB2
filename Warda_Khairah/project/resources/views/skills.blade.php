@@ -1,22 +1,19 @@
 @extends('home')
 
-@section('title', 'project')
+@section('title', 'Skills')
 
 @section('content')
 
-<br>
-    <h3>Skill</h3>
-    <table>
-        <tr>
-            <td>1. C++</td>
-        </tr>
-        <tr>
-            <td>2. php</td>
-        </tr>
-        <tr>
-            <td>3. MySQL</td>
-        </tr>
-
+<div class="container mt-4">
+    <h3 class="mb-3">Skill</h3>
+    <table class="table table-bordered table-striped">
+        <tbody>
+            <tr>
+                <th scope="row">Keahlian</th>
+                <td>{{ $keahlian }}</td>
+            </tr>
+        </tbody>
     </table>
-    
+</div>
+
 @endsection
