@@ -1,4 +1,16 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+=======
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -275,3 +287,4 @@
         @endif
     </body>
 </html>
+>>>>>>> dbfa4438fc3785e0289c9bd1fbe422bc1fec32e4
