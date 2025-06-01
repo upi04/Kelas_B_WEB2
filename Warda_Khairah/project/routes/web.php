@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\View\View;
-use App\Http\Controllers\BiodataController; 
+use App\Http\Controllers\contohcontroler; 
 
 Route::get('/', function () {
     return view(view: 'home');
@@ -28,3 +28,6 @@ Route::get('/home', action: function ():view {
 Route::get('/contact', action: function ():view {
     return view(view: 'contact');
 });
+
+route::get('/produk', [contohcontroler::class,'index']);
+   

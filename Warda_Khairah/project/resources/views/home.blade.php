@@ -24,6 +24,9 @@
                 <td>
                     <a href="skills">Skills</a>
                 </td>
+                 <td>
+                    <a href="produk">produk</a>
+                </td>
             </tr>
         </table>
     </header>
