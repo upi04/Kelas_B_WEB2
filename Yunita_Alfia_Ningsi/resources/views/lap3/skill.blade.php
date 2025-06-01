@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Biodata</title>
+    <title>Skill</title>
 </head>
 <body>
     <h2 style="text-align:center;">Halaman Skill</h2>

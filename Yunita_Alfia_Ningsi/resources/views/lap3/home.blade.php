@@ -2,6 +2,11 @@
 <html>
 <head>
     <title>home</title>
+        <style>
+        table { width: 60%; margin: 20px auto; border-collapse: collapse; }
+        th, td { padding: 10px; border: 1px solid #ccc; text-align: left; }
+        th { background-color: #f2f2f2; width: 200px; }
+    </style>
 </head>
 <body>
     <h2 style="text-align:center;">Halaman Utama</h2>
@@ -14,8 +19,7 @@
     <table>
         @foreach($home as $hm => $value)
             <tr>
-                <td>{{ $hm }}</td>
-                <td>:</td>
+                <th>{{ $hm }}</th>
                 <td>{!! $value !!}</td>
             </tr>
         @endforeach
