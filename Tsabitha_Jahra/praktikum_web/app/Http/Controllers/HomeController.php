@@ -32,6 +32,7 @@ class HomeController extends Controller
             'Pengalaman organisasi' => 'Palang Merah Indonesia',
             'Makanan favorit' =>'mie',
             'Minuman favorit' =>'Jus alpukat',
+            'Warna favorit' =>'Biru Muda',
         ];
 
         return view('dashboard', compact('title', 'deskripsi', 'fitur'));
