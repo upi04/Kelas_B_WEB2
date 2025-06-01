@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Laravel Blade Template</title>
+    <title>Laravel Blade</title>
 </head>
 <body>
     <div>
