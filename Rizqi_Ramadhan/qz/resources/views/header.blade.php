@@ -7,11 +7,29 @@
 
     <!-- Navigasi -->
     <nav style="display: flex; gap: 30px;">
-        <a href="{{ url('/') }}" style="color: red; text-decoration: none; font-weight: bold;">HOME</a>
-        <a href="{{ url('/projects') }}" style="color: red; text-decoration: none; font-weight: bold;">PROJECT</a>
-        <a href="{{ url('/skill') }}" style="color: red; text-decoration: none; font-weight: bold;">SKILL</a>
-        <a href="{{ url('/about_rizqi') }}" style="color: red; text-decoration: none; font-weight: bold;">ABOUT</a>
-        <a href="{{ url('/contact') }}" style="color: red; text-decoration: none; font-weight: bold;">CONTACT</a>
+        <a href="{{ url('/') }}">HOME</a>
+        <a href="{{ url('/biodata') }}">BIODATA</a>
+        <a href="{{ url('/projects') }}">PROJECT</a>
+        <a href="{{ url('/skill') }}">SKILL</a>
+        <a href="{{ url('/about_rizqi') }}">ABOUT</a>
+        <a href="{{ url('/contact') }}">CONTACT</a>
     </nav>
 
 </header>
+
+<style>
+    nav a {
+        color: red;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+        background-color: red;
+        color: white;
+        cursor: pointer;
+    }
+</style>
