@@ -2,6 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
+<<<<<<< HEAD
+Route::get('/biodata', function () {
+    return view('welcome');
+});
+=======
 Route::get('/Biodata Amitha', function () {
     return view('contact');
 });
@@ -53,3 +58,4 @@ Route::get('/biodataku', [homecontroller::class, 'showBiodata']);
 
 
 
+>>>>>>> dbfa4438fc3785e0289c9bd1fbe422bc1fec32e4

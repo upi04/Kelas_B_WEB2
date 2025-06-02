@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\biodata;
 use Illuminate\Support\Facades\Route;
 
 
 use App\Http\Controllers\BiodataController;
+use App\Http\Controllers\contohcontroller;
 
 Route::get('/', [BiodataController::class, 'index']);
 
@@ -22,3 +24,8 @@ Route::get('/projects', function(){
 Route::get('/skill', function(){
     return view('skill');
 });
+
+
+Route::get('/biodata', [biodata::class, 'biodata']);
+
+Route::get('/bahasa',[biodata::class,'Bahasa_Pemrograman']);
