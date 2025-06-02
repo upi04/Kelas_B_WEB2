@@ -9,7 +9,8 @@
         <a href="{{ url('/') }}">Home</a> |
         <a href="{{ url('/about') }}">About</a> |
         <a href="{{ url('/skills') }}">Skills</a> |
-        <a href="{{ url('/contact') }}">Contact</a>
+        <a href="{{ url('/contact') }}">Contact</a> |
+        <a href="{{ url('/produk') }}">Produk</a>
     </nav>
 </body>
 </html>
