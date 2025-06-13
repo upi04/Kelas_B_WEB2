@@ -8,13 +8,13 @@
     <h3>Skill</h3>
     <table>
         <tr>
-            <td>1. C++</td>
+            <td>1. bisa kerja motor</td>
         </tr>
         <tr>
-            <td>2. php</td>
+            <td>2. bisa jadi imam</td>
         </tr>
         <tr>
-            <td>3. MySQL</td>
+            <td>3. bisa mngerjakan segala hal</td>
         </tr>
 
     </table>
