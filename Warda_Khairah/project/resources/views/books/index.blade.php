@@ -22,7 +22,7 @@
             @forelse ($books as $book)
                 <tr>
                     <td>{{ $loop->iteration }}</td>
-                    <td>{{ $book->name }}</td>
+                    <td>{{ $book->title }}</td>
                     <td>{{ $book->author }}</td>
                     <td>{{ $book->published_year }}</td>
                     <td>{{ $book->description }}</td>
