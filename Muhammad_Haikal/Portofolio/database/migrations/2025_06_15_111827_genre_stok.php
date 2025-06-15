@@ -1,0 +1,23 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class GenreStock extends Migration
+{
+    public function up()
+    {
+        Schema::table('books', function (Blueprint $table) {
+            $table->string('genre')->nullable();
+            $table->integer('stock');
+        });
+    }
+
+    public function down()
+    {
+        Schema::table('books', function (Blueprint $table) {
+            $table->dropColumn(['genre', 'stock']);
+        });
+    }
+}
