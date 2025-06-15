@@ -51,6 +51,11 @@ Route::get('/home', function () {
     return view('home');
 })->name('home');
 
+use App\Http\Controllers\homecontroller;
+
+Route::get('/biodataku', [homecontroller::class, 'showBiodata']);
+
+
 
 
 >>>>>>> dbfa4438fc3785e0289c9bd1fbe422bc1fec32e4
