@@ -2,14 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 
-<<<<<<< HEAD
-Route::get('/biodata', function () {
-    return view('welcome');
-});
-=======
-Route::get('/Biodata Amitha', function () {
-    return view('contact');
-});
+// Route::get('/biodata', function () {
+//     return view('welcome');
+// });
+// =======
+// Route::get('/Biodata Amitha', function () {
+//     return view('contact');
+// });
 
 
 
@@ -51,6 +50,13 @@ Route::get('/home', function () {
     return view('home');
 })->name('home');
 
+use App\Http\Controllers\homecontroller;
+
+Route::get('/biodataku', [homecontroller::class, 'showBiodata']);
+
+Route::resource('books', App\Http\Controllers\BookController::class);
+Route::resource('students', App\Http\Controllers\StudentController::class);
 
 
->>>>>>> dbfa4438fc3785e0289c9bd1fbe422bc1fec32e4
+
+
