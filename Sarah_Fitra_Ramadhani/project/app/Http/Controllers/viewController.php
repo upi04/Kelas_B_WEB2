@@ -20,8 +20,4 @@ class viewController extends Controller{
     public function skills(){
         return view('skills');
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> dbfa4438fc3785e0289c9bd1fbe422bc1fec32e4
