@@ -11,3 +11,4 @@ Route::get('/about', function () {
     return view('about');
 });
 
+Route::get('/biodata', [BiodataController::class, 'showBiodata']);
