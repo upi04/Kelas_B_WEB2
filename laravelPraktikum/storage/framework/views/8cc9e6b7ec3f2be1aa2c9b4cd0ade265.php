@@ -1,1 +1,0 @@
-<?php /**PATH D:\praktikum_laravel\laravelPraktikum\resources\views/welcome.blade.php ENDPATH**/ ?>
