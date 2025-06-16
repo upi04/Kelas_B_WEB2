@@ -6,6 +6,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\SkillController;
 use App\Http\Controllers\MessageController;
+use App\Http\Controllers\BookController;
+use App\Http\Controllers\StudentController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -46,3 +48,7 @@ Route::get('/biodatadiri/biodata', function () {
 Route::get('/biodatadiri/home', function () {
     return view('biodatadiri/home');
 });
+
+Route::get('/laporan4/books', [BookController::class, 'index']);
+Route::get('/laporan4/students', [StudentController::class, 'index']);
+
