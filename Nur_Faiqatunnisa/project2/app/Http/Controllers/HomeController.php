@@ -16,16 +16,16 @@ class HomeController extends Controller
     {
         return [
             'nama' => 'Nur Faiqatunnisa',
-            'ttl' => 'Sinjai, 10 Januari 2003',
+            'ttl' => 'Sinjai, 20 juli 2005',
             'jenis_kelamin' => 'Perempuan',
             'alamat' => 'Jl. Persatuan, Sinjai Utara',
-            'email' => 'faiqatunnisa@example.com',
-            'telepon' => '081234567890',
-            'pendidikan' => 'S1 Sistem Informasi - Universitas Negeri Makassar',
-            'hobi' => 'Membaca, Menulis, Desain Grafis',
+            'email' => 'faiqatunnisa@gmail.com',
+            'telepon' => '082346874142',
+            'pendidikan' => 'TEKNIK INFORMATIKA - UNIVERSITAS ISLAM NEGERI ALAUDDIN MAKASSAR',
+            'hobi' => 'Desain Grafis',
             'cita_cita' => 'Data Analyst',
-            'keahlian' => 'PHP, Laravel, MySQL, Canva',
-            'pengalaman_organisasi' => 'Ketua OSIS, Anggota BEM Fakultas'
+            'keahlian' => 'html,CSS, Canva',
+            'pengalaman_organisasi' => 'member inready Workgroup'
         ];
     }
 }
