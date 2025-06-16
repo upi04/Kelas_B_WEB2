@@ -2,15 +2,15 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Daftar Mahasiswa</title>
+    <title>Daftar Buku</title>
     <style>
         * {
             box-sizing: border-box;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f4f8;
+            font-family: 'Poppins', sans-serif;
+            background: #eef2f7;
             margin: 0;
             padding: 20px;
             color: #333;
@@ -18,35 +18,33 @@
 
         h1 {
             text-align: center;
-            color: #2c3e50;
+            color: #2d3436;
             margin-bottom: 30px;
         }
 
         .table-container {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
             background: #ffffff;
-            padding: 20px 25px;
             border-radius: 12px;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-            overflow-x: auto;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            min-width: 800px;
+            min-width: 1000px;
         }
 
         thead {
-            background-color: #3498db;
+            background: linear-gradient(to right, #3498db, #2980b9);
             color: white;
         }
 
         th, td {
-            padding: 12px 16px;
+            padding: 14px 18px;
             text-align: left;
-            border-bottom: 1px solid #ddd;
         }
 
         th {
@@ -55,48 +53,62 @@
             letter-spacing: 0.5px;
         }
 
-        tr:hover {
-            background-color: #f2f9ff;
+        tbody tr {
+            border-bottom: 1px solid #e0e0e0;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f6fb;
         }
 
         td {
             font-size: 14px;
+            color: #2c3e50;
         }
 
         @media (max-width: 768px) {
             .table-container {
-                padding: 10px;
+                overflow-x: auto;
             }
 
             table {
-                min-width: 600px;
+                min-width: 800px;
+            }
+
+            body {
+                padding: 10px;
             }
         }
     </style>
 </head>
 <body>
 
-    <h1>🎓 Daftar Mahasiswa</h1>
+    <h1>📚 Daftar Buku</h1>
 
     <div class="table-container">
         <table>
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Nama</th>
-                    <th>Email</th>
-                    <th>Tanggal Lahir</th>
-                    <th>Jurusan</th>
+                    <th>Judul</th>
+                    <th>Penulis</th>
+                    <th>Tahun Terbit</th>
+                    <th>Deskripsi</th>
+                    <th>Genre</th>
+                    <th>Stok</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach($students as $student)
+                @foreach($books as $book)
                 <tr>
-                    <td>{{ $student->id }}</td>
-                    <td>{{ $student->name }}</td>
-                    <td>{{ $student->email }}</td>
-                    <td>{{ $student->birthdate }}</td>
-                    <td>{{ $student->major }}</td>
+                    <td>{{ $book->id }}</td>
+                    <td>{{ $book->title }}</td>
+                    <td>{{ $book->author }}</td>
+                    <td>{{ $book->published_year }}</td>
+                    <td>{{ $book->description }}</td>
+                    <td>{{ $book->genre }}</td>
+                    <td>{{ $book->stock }}</td>
                 </tr>
                 @endforeach
             </tbody>
