@@ -45,4 +45,14 @@ Route::get('/mahasiswa',[MahasiswaController::class,'index']);
 Route::get('/mahasiswa/{id}/edit', [MahasiswaController::class,'edit']);
 Route::put('/mahasiswa/{id}', [MahasiswaController::class,'update']);
 Route::delete('/mahasiswa/{id}', [MahasiswaController::class,'destroy']);
+
+// Tampilkan halaman trash
+Route::get('/mahasiswa/trash', [MahasiswaController::class, 'trash'])->name('mahasiswa.trash');
+
+// Restore data
+Route::get('/mahasiswa/{id}/restore', [MahasiswaController::class, 'restore'])->name('mahasiswa.restore');
+
+// Hapus permanen
+Route::delete('/mahasiswa/{id}/force', [MahasiswaController::class, 'forceDelete'])->name('mahasiswa.forceDelete');
+
    

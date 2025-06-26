@@ -8,21 +8,16 @@
 <body>
     <h1>Edit Data Mahasiswa</h1>
 
-    <form action="/mahasiswa/{{ $mahasiswa->id }}" method="POST">
-        @csrf
-        @method('PUT')
-        <input type="text" name="nama" value="{{ $mahasiswa->nama }}" placeholder="Nama"><br>
-        <input type="text" name="nim" value="{{ $mahasiswa->nim }}" placeholder="NIM"><br>
-        <input type="text" name="jurusan" value="{{ $mahasiswa->jurusan }}" placeholder="Jurusan"><br>
-        <button type="submit">Update</button>
-    </form>
+    <form action="{{ url('/mahasiswa/' . $mahasiswa->id) }}" method="POST">
+    @csrf
+    @method('PUT')
+    <input type="text" name="nama" value="{{ $mahasiswa->nama }}">
+    <input type="text" name="nim" value="{{ $mahasiswa->nim }}">
+    <input type="text" name="jurusan" value="{{ $mahasiswa->jurusan }}">
+    <input type="text" name="alamat" value="{{ $mahasiswa->profile->alamat ?? '' }}">
+    <input type="text" name="no_hp" value="{{ $mahasiswa->profile->no_hp ?? '' }}">
 
-    <br>
-
-    <form action="/mahasiswa/{{ $mahasiswa->id }}" method="POST" onsubmit="return confirm('Yakin ingin hapus?')">
-        @csrf
-        @method('DELETE')
-        <button type="submit">Hapus</button>
-    </form>
+    <button type="submit">Update</button>
+</form>
 </body>
 </html>

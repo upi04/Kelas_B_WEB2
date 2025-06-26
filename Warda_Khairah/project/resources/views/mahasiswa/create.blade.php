@@ -5,15 +5,15 @@
 </head>
 <body>
     <h1>Form Tambah Mahasiswa</h1>
-    <form action="/mahasiswa" method="POST">
-        @csrf
-        <label>Nama:</label><br>
-        <input type="text" name="nama"><br><br>
+    <form action="{{ url('/mahasiswa') }}" method="POST">
+    @csrf
+    <input type="text" name="nama" placeholder="Nama">
+    <input type="text" name="nim" placeholder="NIM">
+    <input type="text" name="jurusan" placeholder="Jurusan">
+    <input type="text" name="alamat" placeholder="Alamat">
+    <input type="text" name="no_hp" placeholder="No HP">
+    <button type="submit">Simpan</button>
+</form>
 
-        <label>NIM:</label><br>
-        <input type="text" name="nim"><br><br>
-
-        <button type="submit">Simpan</button>
-    </form>
 </body>
 </html>
