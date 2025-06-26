@@ -1,17 +1,18 @@
 <?php
 
+use App\Http\Controllers\MahasiswaController;
+use App\Models\Mahasiswa;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\StudentController;
-use App\Http\Controllers\BookController;
 
-// Halaman utama (opsional)
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/mahasiswa');
 });
 
-// Route untuk daftar mahasiswa
-Route::get('/students', [StudentController::class, 'index'])->name('students.index');
+//  Route untuk menampilkan SEMUA mahasiswa (Read)
+Route::get('/mahasiswa', [MahasiswaController::class, 'index']);
 
-// Route untuk daftar buku
-Route::get('/books', [BookController::class, 'index'])->name('books.index');
+// Route untuk menampilkan FORM tambah mahasiswa (Create Form)
+Route::get('/mahasiswa/create', [MahasiswaController::class, 'create']);
 
+// Route untuk MENYIMPAN data mahasiswa baru dari form (Store Data)
+Route::post('/mahasiswa', [MahasiswaController::class, 'store'])->name('mahasiswa.store');
