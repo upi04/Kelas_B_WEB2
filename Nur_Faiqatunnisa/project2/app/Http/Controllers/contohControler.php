@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class contohControler extends Controller
+{
+    Public function index()
+    {
+
+        $produk = ['neptop', 'Hp', 'ipad', 'Huawei'];
+        return view('produk.index', compact('produk'));
+    }
+
+}
