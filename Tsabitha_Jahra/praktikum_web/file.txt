@@ -1,0 +1,55 @@
+/*
+============================================================
+PERBEDAAN GET DAN POST + CONTOH PENGGUNAANNYA DI LARAVEL
+============================================================
+
+1. GET Method
+-------------
+- Digunakan untuk mengambil data dari server.
+- Data dikirim melalui URL (query string), sehingga terlihat di address bar.
+- Tidak cocok untuk data sensitif.
+- Bisa dibookmark dan disimpan di history browser.
+- Contoh penggunaan:
+    a. Menampilkan daftar data.
+    b. Menampilkan form input.
+
+Contoh Routing GET di Laravel:
+--------------------------------
+Route::get('/mahasiswas', [MahasiswaController::class, 'index']);
+Route::get('/mahasiswas/create', [MahasiswaController::class, 'create']);
+
+Contoh Controller GET:
+-----------------------
+public function index() {
+    $mahasiswas = Mahasiswa::all();
+    return view('mahasiswa.index', compact('mahasiswas'));
+}
+
+public function create() {
+    return view('mahasiswa.create');
+}
+
+
+2. POST Method
+--------------
+- Digunakan untuk mengirim data ke server, biasanya untuk menyimpan, mengubah, atau menghapus data.
+- Data dikirim di dalam body HTTP, tidak terlihat di URL.
+- Lebih aman untuk data sensitif seperti password atau form input.
+- Tidak bisa dibookmark.
+
+Contoh Routing POST di Laravel:
+--------------------------------
+Route::post('/mahasiswas', [MahasiswaController::class, 'store'])->name('mahasiswas.store');
+
+Contoh Controller POST:
+------------------------
+public function store(Request $request) {
+    $request->validate([
+        'nama' => 'required',
+        'nim' => 'required|numeric',
+    ]);
+
+    Mahasiswa::create($request->only('nama', 'nim'));
+
+    return redirect()->route('mahasiswas.index')->with('success', 'Data berhasil disimpan');
+}
