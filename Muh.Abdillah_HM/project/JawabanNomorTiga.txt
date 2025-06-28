@@ -1,0 +1,25 @@
+1. Perbandingan Metode Penghapusan Data
+
+1.1. Hard Delete: Menghapus data secara permanen dari database. Di Laravel, metode yang digunakan adalah forceDelete().
+
+1.2. Soft Delete: Hanya menandai data sebagai terhapus dengan mengisi timestamp pada kolom deleted_at, sehingga data tidak hilang secara fisik. Di Laravel, ini menggunakan method delete() pada model dengan trait SoftDeletes.
+
+2. Evaluasi Metode Soft Delete
+
+2.1. Keunggulan: Mencegah kehilangan data, menjaga riwayat untuk audit, dan aman untuk data yang memiliki relasi.
+
+2.2. Keterbatasan: Meningkatkan ukuran database, memerlukan kueri khusus untuk mengakses data terhapus, dan membutuhkan implementasi yang cermat.
+
+3. Konteks Implementasi Soft Delete
+
+3.1. Metode ini ideal untuk data krusial seperti akun pengguna, riwayat transaksi, atau konten buatan pengguna yang jejaknya perlu dijaga.
+
+4. Semantik Metode HTTP (POST, PUT, DELETE)
+
+4.1. POST: Digunakan untuk membuat data baru.
+
+4.2. PUT: Digunakan untuk memperbarui data yang sudah ada.
+
+4.3. DELETE: Digunakan untuk menghapus data.
+
+4.4. Karena form HTML hanya mendukung GET dan POST, Laravel menggunakan arahan Blade @method('PUT') atau @method('DELETE') untuk menerapkan metode HTTP yang sesuai dengan standar RESTful.
