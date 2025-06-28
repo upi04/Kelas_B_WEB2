@@ -42,4 +42,3 @@ Route::delete('/mahasiswa/{id}', [MahasiswaController::class, 'destroy']);
 Route::get('/mahasiswa/trash', [MahasiswaController::class, 'trash']);
 Route::get('/mahasiswa/restore/{id}', [MahasiswaController::class, 'restore']);
 Route::delete('/mahasiswa/forceDelete/{id}', [MahasiswaController::class, 'forceDelete']);
-//

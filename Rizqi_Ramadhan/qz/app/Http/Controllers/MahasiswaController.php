@@ -99,4 +99,3 @@ class MahasiswaController extends Controller
         return redirect('/mahasiswa/trash')->with('success', 'Data dihapus permanen');
     }
 }
-//

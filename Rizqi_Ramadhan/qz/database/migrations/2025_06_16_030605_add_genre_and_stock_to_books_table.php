@@ -20,4 +20,4 @@ class AddGenreAndStockToBooksTable extends Migration
             $table->dropColumn(['genre', 'stock']);
         });
     }
-}//
+}

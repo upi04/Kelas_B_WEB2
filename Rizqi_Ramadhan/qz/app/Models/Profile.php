@@ -13,4 +13,3 @@ class Profile extends Model
         return $this->belongsTo(Mahasiswa::class);
     }
 }
-//
