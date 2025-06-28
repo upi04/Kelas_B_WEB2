@@ -1,0 +1,18 @@
+Nomor 3
+- Perbedaan Soft Delete vs Hard Delete:
+    Soft delete: data tidak dihapus, hanya disembunyikan (pakai kolom deleted_at).
+    Hard delete: data dihapus permanen dari database.
+
+- Kelebihan & Kekurangan Soft Delete:
+    Kelebihan: Data bisa dikembalikan lagi (restore).
+    Kekurangan: Data tetap ada di database → bisa membuat ukuran database besar.
+
+- Contoh situasi kapan Soft Delete lebih aman dipakai:
+    Aplikasi kampus: Mahasiswa yang keluar/DO bisa di-restore jika mereka kembali.
+    Aplikasi toko online: Produk yang di-delete bisa dikembalikan jika stok tersedia lagi.
+    Sistem kepegawaian: Pegawai resign tapi datanya masih dibutuhkan untuk arsip.  
+
+- Penjelasan Perbedaan method HTTP PUT, DELETE, dan POST dalam konteks update dan hapus data di laravel
+    POST: Digunakan untuk menyimpan data baru.
+    PUT: Digunakan untuk mengupdate data yang sudah ada.
+    DELETE: Digunakan untuk menghapus data dari database.
