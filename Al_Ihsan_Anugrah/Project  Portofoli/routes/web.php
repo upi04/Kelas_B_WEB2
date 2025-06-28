@@ -1,9 +1,11 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\SkillController;
+use App\Http\Controllers\MessageController;
 
-Route::view('/', 'home');
-Route::view('/about', 'about');
-Route::view('/projects', 'projects');
-Route::view('/skills', 'skills');
-Route::view('/contact', 'contact');
+Route::get('/biodata/home', [HomeController::class, 'biodata']);
+Route::get('/biodata/blog', [BlogController::class, 'biodata']);
+Route::get('/biodata/skill', [SkillController::class, 'biodata']);
+Route::get('/biodata/message', [MessageController::class, 'biodata']);

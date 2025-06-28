@@ -1,19 +1,18 @@
 <?php
 
+use App\Http\Controllers\MahasiswaController;
+use App\Models\Mahasiswa;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\BlogController;
-use App\Http\Controllers\SkillController;
-use App\Http\Controllers\MessageController;
 
+Route::get('/', function () {
+    return redirect('/mahasiswa');
+});
 
-Route::get('/', [HomeController::class, 'index']);
+//  Route untuk menampilkan SEMUA mahasiswa (Read)
+Route::get('/mahasiswa', [MahasiswaController::class, 'index']);
 
-Route::get('/blog', [BlogController::class, 'index']);
-Route::get('/blog/{id}', [BlogController::class, 'show']);
+// Route untuk menampilkan FORM tambah mahasiswa (Create Form)
+Route::get('/mahasiswa/create', [MahasiswaController::class, 'create']);
 
-Route::get('/skills', [SkillController::class, 'index']);
-Route::get('/skills/{id}', [SkillController::class, 'show']);
-
-Route::get('/messages', [MessageController::class, 'index']);
-Route::get('/messages/{id}', [MessageController::class, 'show']);
+// Route untuk MENYIMPAN data mahasiswa baru dari form (Store Data)
+Route::post('/mahasiswa', [MahasiswaController::class, 'store'])->name('mahasiswa.store');

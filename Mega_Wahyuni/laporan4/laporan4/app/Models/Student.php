@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+
+class Student extends Model
+{
+    use HasFactory;
+
+    // Kolom yang boleh diisi massal
+    protected $fillable = [
+        'name',
+        'email',
+        'birthdate',
+        'major',
+    ];
+}

@@ -3,39 +3,43 @@
 @section('title', 'About')
 
 @section('content')
-    <br>
-    <h3>Biodata Diri</h3>
-    <table>
-        <tr>
-            <td>Nama</td>
-            <td>:</td>
-            <td>Warda Khairah</td>
-        </tr>
-        <tr>
-            <td>NIM</td>
-            <td>:</td>
-            <td>60200123063</td>
-        </tr>
-        <tr>
-            <td>Tempat/tanggal lahir</td>
-            <td>:</td>
-            <td>Lemoa, 21 Mei 2005</td>
-        </tr>
-        <tr>
-            <td>Hobi</td>
-            <td>:</td>
-            <td>Traveling</td>
-        </tr>
-        <tr>
-            <td>Cita-cita</td>
-            <td>:</td>
-            <td>Penjelajah</td>
-        </tr>
-        <tr>
-            <td>Pendidikan Terakhir</td>
-            <td>:</td>
-            <td>SMK SULTAN HASANUDDIN</td>
-        </tr>
-    </table>
-
+    <div class="container mt-4">
+        <h3 class="mb-3">Biodata Diri</h3>
+        <table class="table table-bordered table-striped">
+            <tbody>
+                <tr>
+                    <th scope="row">Nama</th>
+                    <td>{{ $biodata['nama'] }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Jenis Kelamin</th>
+                    <td>{{ $biodata['jeniskelamin'] }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Tempat Tanggal Lahir</th>
+                    <td>{{ $biodata['tempat'] }}, {{ $biodata['tanggallahir'] }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Alamat</th>
+                    <td>{{ $biodata['alamat'] }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Pendidikan</th>
+                    <td>{{ $biodata['pendidikan'] }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Hobi</th>
+                    <td>{{ $biodata['hobi'] }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Cita-Cita</th>
+                    <td>{{ $biodata['cita-cita'] }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Pengalaman Organisasi</th>
+                    <td>{{ $biodata['pengalamanorganisasi'] }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 @endsection

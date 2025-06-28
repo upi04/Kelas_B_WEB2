@@ -7,9 +7,9 @@
 </head>
 <body>
     <h1>Contact:</h1>
-    <p>Email: fatimahAszhara31@gmail.com <br>
-    Ig: Fazaaaszhara <br>
-    Wa: 082259783087
+    <p>Email: nfaiqatunnisa@gmail.com <br>
+    Ig: nr_faiqtunnis_ <br>
+    Wa: 082346874142
     </p>
         <ol style="list-style: none; display: flex; gap: 15px;">
         <li>
