@@ -11,3 +11,4 @@ class RizqiModel extends Model
 
     protected $fillable = ['name', 'email', 'age'];
 }
+//
