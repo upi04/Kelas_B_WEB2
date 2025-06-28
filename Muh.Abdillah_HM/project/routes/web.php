@@ -48,3 +48,8 @@ POST:Untuk mengirim data ke server, seperti mengisi formulir. Data
 Route::get('/mahasiswa/{id}/edit', [MahasiswaController::class, 'edit']); 
 Route::put('/mahasiswa/{id}', [MahasiswaController::class, 'update']);
 Route::delete('/mahasiswa/{id}', [MahasiswaController::class, 'destroy']);
+
+//Lap 6
+Route::get('/mahasiswa/trash', [MahasiswaController::class, 'trash'])->name('mahasiswa.trash');
+Route::post('/mahasiswa/{id}/restore', [MahasiswaController::class, 'restore'])->name('mahasiswa.restore');
+Route::delete('/mahasiswa/{id}/force-delete', [MahasiswaController::class, 'forceDelete'])->name('mahasiswa.forceDelete');

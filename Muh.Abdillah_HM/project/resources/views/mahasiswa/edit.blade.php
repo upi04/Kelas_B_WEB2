@@ -11,18 +11,23 @@
     <form action="/mahasiswa/{{ $mahasiswa->id }}" method="POST">
         @csrf
         @method('PUT')
-        <input type="text" name="nama" value="{{ $mahasiswa->nama }}" placeholder="Nama"><br>
-        <input type="text" name="nim" value="{{ $mahasiswa->nim }}" placeholder="NIM"><br>
-        <input type="text" name="jurusan" value="{{ $mahasiswa->jurusan }}" placeholder="Jurusan"><br>
+        
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama" value="{{ $mahasiswa->nama }}" placeholder="Nama"><br><br>
+        
+        <label for="nim">NIM:</label><br>
+        <input type="text" id="nim" name="nim" value="{{ $mahasiswa->nim }}" placeholder="NIM"><br><br>
+        
+        <label for="jurusan">Jurusan:</label><br>
+        <input type="text" id="jurusan" name="jurusan" value="{{ $mahasiswa->jurusan }}" placeholder="Jurusan"><br><br>
+
+        <label for="alamat">Alamat:</label><br>
+        <textarea id="alamat" name="alamat" placeholder="Alamat">{{ $mahasiswa->profile->alamat ?? '' }}</textarea><br><br>
+
+        <label for="no_hp">Nomor HP:</label><br>
+        <input type="text" id="no_hp" name="no_hp" value="{{ $mahasiswa->profile->no_hp ?? '' }}" placeholder="Nomor HP"><br><br>
+
         <button type="submit">Update</button>
-    </form>
-
-    <br>
-
-    <form action="/mahasiswa/{{ $mahasiswa->id }}" method="POST" onsubmit="return confirm('Yakin ingin hapus?')">
-        @csrf
-        @method('DELETE')
-        <button type="submit">Hapus</button>
     </form>
 </body>
 </html>
