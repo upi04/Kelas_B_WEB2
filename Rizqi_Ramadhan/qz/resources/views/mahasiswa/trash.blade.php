@@ -10,7 +10,7 @@
 
     <table border="1">
         <tr>
-            <th>Nama</th>
+            <th>Nama.</th>
             <th>NIM</th>
             <th>Jurusan</th>
             <th>Aksi</th>
