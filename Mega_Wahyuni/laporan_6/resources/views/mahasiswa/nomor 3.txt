@@ -1,0 +1,18 @@
+1. Perbedaan Soft Delete vs Hard Delete:
+- Soft Delete: data tidak benar-benar dihapus, hanya diberi tanda deleted_at
+- Hard Delete: data dihapus langsung dari database
+
+2. Kelebihan & Kekurangan Soft Delete:
++ Bisa dikembalikan (restore)
++ Aman untuk data penting
+- Perlu query khusus untuk tidak menampilkan data yang dihapus
+
+3. Situasi di mana Soft Delete lebih baik:
+- Saat ingin menyimpan log data
+- Saat perlu kemampuan mengembalikan data
+
+4. Perbedaan HTTP Method:
+- GET: menampilkan data
+- POST: menambah data baru
+- PUT: memperbarui data
+- DELETE: menghapus data

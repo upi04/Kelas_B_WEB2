@@ -1,0 +1,13 @@
+Perbedaan mendasar antara GET dan POST dalam Laravel:
+
+GET:
+- Digunakan untuk mengambil atau menampilkan data.
+- Data dikirim melalui URL.
+- Contoh: Route GET untuk menampilkan form atau data mahasiswa:
+  Route::get('/mahasiswa', [MahasiswaController::class, 'index']);
+
+POST:
+- Digunakan untuk mengirim atau menyimpan data ke server.
+- Data dikirim melalui body request (lebih aman).
+- Contoh: Route POST untuk menyimpan data mahasiswa:
+  Route::post('/mahasiswa', [MahasiswaController::class, 'store']);

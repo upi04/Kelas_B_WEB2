@@ -1,0 +1,28 @@
+/*
+|--------------------------------------------------------------------------
+| Perbedaan Mendasar antara Method GET dan POST
+|--------------------------------------------------------------------------
+|
+| 1. GET:
+|    - Digunakan untuk mengambil data dari server.
+|    - Data dikirim melalui URL (query string).
+|    - Cocok untuk request yang tidak mengubah data di server.
+|    - Contoh: menampilkan halaman, mencari data.
+|
+| 2. POST:
+|    - Digunakan untuk mengirim data ke server (biasanya untuk menyimpan).
+|    - Data dikirim dalam body request, tidak terlihat di URL.
+|    - Cocok untuk request yang memodifikasi data di server.
+|    - Contoh: menyimpan form, mengupload file.
+|
+|---------------------------------------------------------------------------
+| Contoh Penggunaan di Laravel
+|---------------------------------------------------------------------------
+|
+| // GET - Menampilkan halaman form tambah data mahasiswa
+| Route::get('/mahasiswa/create', [MahasiswaController::class, 'create']);
+|
+| // POST - Menyimpan data mahasiswa dari form ke database
+| Route::post('/mahasiswa', [MahasiswaController::class, 'store']);
+|
+*/
