@@ -44,4 +44,4 @@ class ProfileController extends Controller
 
         return view('biodata', compact('biodata'));
     }
-}//
+}

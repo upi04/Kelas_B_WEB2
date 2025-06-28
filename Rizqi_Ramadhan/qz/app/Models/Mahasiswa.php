@@ -17,4 +17,3 @@ class Mahasiswa extends Model
         return $this->hasOne(Profile::class);
     }
 }
-//
