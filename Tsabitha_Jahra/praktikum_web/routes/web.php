@@ -27,3 +27,8 @@ Route::get('/skills', [SkillController::class, 'index']);
 Route::get('/skills/{id}', [SkillController::class, 'show']);
 Route::get('/messages', [MessageController::class, 'index']);
 Route::get('/messages/{id}', [MessageController::class, 'show']);
+
+// Soft delete (trash) routes
+Route::get('/mahasiswa/trash', [MahasiswaController::class, 'trash']);
+Route::get('/mahasiswa/restore/{id}', [MahasiswaController::class, 'restore']);
+Route::delete('/mahasiswa/forceDelete/{id}', [MahasiswaController::class, 'forceDelete']);

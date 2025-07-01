@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Daftar Mahasiswa</title>
+    <title>Data Mahasiswa Terhapus</title>
 </head>
 <body>
-    <h1>Daftar Mahasiswa</h1>
+    <h1>Data Mahasiswa di Trash</h1>
 
-    <a href="{{ url('/mahasiswa/create') }}">Tambah Mahasiswa</a> 
-    <a href="{{ url('/mahasiswa/trash') }}">Lihat Trash</a>
+    <a href="{{ url('/mahasiswa') }}">Kembali ke Daftar</a>
 
     <table border="1">
         <tr>
@@ -22,11 +21,11 @@
             <td>{{ $m->nim }}</td>
             <td>{{ $m->jurusan }}</td>
             <td>
-                <a href="{{ url('/mahasiswa/'.$m->id.'/edit') }}">Edit</a> 
-                <form action="{{ url('/mahasiswa/'.$m->id) }}" method="POST" style="display:inline;">
+                <a href="{{ url('/mahasiswa/restore/'.$m->id) }}">Restore</a>
+                <form action="{{ url('/mahasiswa/forceDelete/'.$m->id) }}" method="POST" style="display:inline;">
                     @csrf
                     @method('DELETE')
-                    <button type="submit">Hapus</button>
+                    <button type="submit">Hapus Permanen</button>
                 </form>
             </td>
         </tr>

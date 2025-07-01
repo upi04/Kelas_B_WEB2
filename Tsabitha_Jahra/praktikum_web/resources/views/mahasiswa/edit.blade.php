@@ -1,28 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Mahasiswa</title>
 </head>
 <body>
-    <h1>Edit Data Mahasiswa</h1>
+    <h1>Edit Mahasiswa & Profil</h1>
 
-    <form action="/mahasiswa/{{ $mahasiswa->id }}" method="POST">
+    <form action="{{ url('/mahasiswa/'.$mahasiswa->id) }}" method="POST">
         @csrf
         @method('PUT')
-        <input type="text" name="nama" value="{{ $mahasiswa->nama }}" placeholder="Nama"><br>
-        <input type="text" name="nim" value="{{ $mahasiswa->nim }}" placeholder="NIM"><br>
-        <input type="text" name="jurusan" value="{{ $mahasiswa->jurusan }}" placeholder="Jurusan"><br>
-        <button type="submit">Update</button>
-    </form>
 
-    <br>
+        <label>Nama:</label><br>
+        <input type="text" name="nama" value="{{ $mahasiswa->nama }}"><br><br>
 
-    <form action="/mahasiswa/{{ $mahasiswa->id }}" method="POST" onsubmit="return confirm('Yakin ingin hapus?')">
-        @csrf
-        @method('DELETE')
-        <button type="submit">Hapus</button>
+        <label>NIM:</label><br>
+        <input type="text" name="nim" value="{{ $mahasiswa->nim }}"><br><br>
+
+        <label>Jurusan:</label><br>
+        <input type="text" name="jurusan" value="{{ $mahasiswa->jurusan }}"><br><br>
+
+        <label>Alamat:</label><br>
+        <input type="text" name="alamat" value="{{ $mahasiswa->profile->alamat ?? '' }}"><br><br>
+
+        <label>No HP:</label><br>
+        <input type="text" name="no_hp" value="{{ $mahasiswa->profile->no_hp ?? '' }}"><br><br>
+
+        <button type="submit">Simpan</button>
     </form>
 </body>
 </html>
